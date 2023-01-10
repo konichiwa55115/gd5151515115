@@ -36,7 +36,7 @@ async def revoke(client, message):
             #     text="Deleted Your Auth token from database.",
             #     reply_to_message_id=update.message_id
             # )
-            await message.reply_text("Logout Successfully 😊")
+            await message.reply_text("تم تسجيل الخروج بنجاح")
             LOGGER.info(f"{chat_id} : Removed From Database")
             conn.commit()
         else:
@@ -45,8 +45,8 @@ async def revoke(client, message):
             #     text="No auth token found in database.",
             #     reply_to_message_id=update.message_id
             # )
-            await message.reply_text("No Auth Token Found In Database !!")
+            await message.reply_text("كود خاطئ")
     else:
         # await bot.send_message(chat_id=update.chat.id, text="Revoke fail
         # text")
-        await message.reply_text("You Have To Login First")
+        await message.reply_text("يجب أن تسجل الدخول أولاً")
