@@ -25,7 +25,7 @@ async def Auth(client, message):
         AUTH = f"{authurl}"
         await message.reply_text("أولاً : أرسل عنوان بريد جوجل على هذا البوت و سيتم إضافة حسابك في غضون 6 ساعات كحد أقصى إن شاء الله \n\n @Dashmelchatbot \n\n ثانياً :ادخل على هذا الرابط و سجل بحساب جوجل الذي تريد الرفع عليه \n\n سوف يحولك إلى صفحة مكتوب عليها كود معين \n\n غالباً يكون بعد  \n\n code= \n\n و قبل \n\n & \n\n انسخه ثم أرسله هنا ",
                                  reply_markup=InlineKeyboardMarkup(
-                                     [[InlineKeyboardButton("Authenticate", url=AUTH)]
+                                     [[InlineKeyboardButton("ربط الحساب", url=AUTH)]
                                       ]))
 
     elif gauth.access_token_expired:
