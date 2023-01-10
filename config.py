@@ -14,5 +14,5 @@ adminList = [985378987, 1212106123, 1227193881]
 
 
 EDIT_TIME = 5
-FINISHED_PROGRESS_STR = "postgresql://postgres:Ibntaymya1.@db.ocsrfwsqoiuztsqyjbip.supabase.co:5432/postgres"
+FINISHED_PROGRESS_STR = "*"
 UNFINISHED_PROGRESS_STR = "_"
