@@ -7,4 +7,4 @@ async def inChannel(client,message):
             return True
         except Exception as e:
             print("not a member")
-            return False
+            return True
