@@ -21,12 +21,12 @@ async def cancel_aria(c, m):
                 cache_time=0)
             return
         if not file["complete"]:
-            LOGGER.info(f"GID : {uuid} cancelled Successfully  Cleaning Storage .. ")
+            LOGGER.info(f"GID : {uuid} تم إلغائه بنجاح . جاري تنظيف الذاكرة  ")
             os.remove(file["download_path"])
         else:
             await c.answer_callback_query(
                 callback_query_id=m.id,
-                text=" Download Already Completed 😁",
+                text=" لقد اكتمل التحميل بالفعل ",
                 show_alert=True,
                 cache_time=0)
-            LOGGER.info(f"{uuid}  is Already Completed ")
+            LOGGER.info(f"{uuid}  اكتمل بالفعل  ")
