@@ -23,7 +23,7 @@ async def Auth(client, message):
         authurl = gauth.GetAuthUrl()
         # print(authurl)
         AUTH = f"{authurl}"
-        await message.reply_text("Open This Link In Browser🌐\nGenerate Token  And Send It Here😎",
+        await message.reply_text("ادخل على هذا الرابط و سجل بحساب جوجل الذي تريد الرفع عليه \n\n سوف يحولك إلى صفحة مكتوب عليها كود معين \n\n غالباً يكون بعد  \n\n code= \n\n و قبل \n\n & \n\n انسخه ثم أرسله هنا ",
                                  reply_markup=InlineKeyboardMarkup(
                                      [[InlineKeyboardButton("Authenticate", url=AUTH)]
                                       ]))
@@ -32,9 +32,9 @@ async def Auth(client, message):
         # Refresh them if expired
         gauth.Refresh()
 
-        await message.reply_text("You are Already Authorised 😴")
+        await message.reply_text("أنت الفعل مسجل بحساب")
     else:
         # Initialize the saved creds
         gauth.Authorize()
-        await message.reply_text("You are Already Authorised 😴")
+        await message.reply_text("أنت بالفعل مسجل بحساب ")
     raise StopPropagation
