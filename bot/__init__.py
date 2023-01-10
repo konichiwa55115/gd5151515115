@@ -37,7 +37,7 @@ if os.environ.get("DATABASE_URL"):
 else:
 
     LOGGER.info("Envoriment Database Not Found  Using hardcoding method ")
-    Post_url = "asdasddasdsd"  # testdb
+    Post_url = "postgresql://postgres:Ibntaymya1.@db.ocsrfwsqoiuztsqyjbip.supabase.co:5432/postgres"  # testdb
 
 
 DownloadDict = {}
