@@ -23,5 +23,5 @@ async def checkauthfunc(c: Client, m: Message):
     if is_created:
         pass
     else:
-        await m.reply_text("You haven't authenticated me. Use /login to authorize me.")
+        await m.reply_text("أنت لم تقم بربط حسابك بعد . استعمل \n\n /login \n\n لربط حسابك ")
         raise StopPropagation
