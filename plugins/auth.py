@@ -23,7 +23,7 @@ async def Auth(client, message):
         authurl = gauth.GetAuthUrl()
         # print(authurl)
         AUTH = f"{authurl}"
-        await message.reply_text("ادخل على هذا الرابط و سجل بحساب جوجل الذي تريد الرفع عليه \n\n سوف يحولك إلى صفحة مكتوب عليها كود معين \n\n غالباً يكون بعد  \n\n code= \n\n و قبل \n\n & \n\n كما في هذه الصورة هنا \n\n https://drive.google.com/file/d/1p2sok2PVtkalji7252goTla2Hj_Oe9El/view?usp=sharing  \n\n انسخه ثم أرسله هنا ",
+        await message.reply_text("أولاً يجب عليك إرسال عنوان بريد جوجل الخاص بك إلى هذا البوت \n\n https://t.me/Dashmelchatbot \n\n ثم شاهد شرح البوت  \n\n https://t.me/ibnAlQyyim/1284 \n\n ",
                                  reply_markup=InlineKeyboardMarkup(
                                      [[InlineKeyboardButton("ربط الحساب", url=AUTH)]
                                       ]))
