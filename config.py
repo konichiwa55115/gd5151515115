@@ -1,7 +1,7 @@
 import os
 
 DOWNLOAD_LOCATION = "./Downloads"
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "5901777471:AAH40QU85DRP4Hw_KGjJZ2MYJppvctEjtc0")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "5869679704:AAHLFjzRFMDefn2BhPnvpLpyIZCIxiO8rd8")
 # BOT_TOKEN = "894269743:AAH3OAtoNulAMPwJg-Cp4zAGBxGazTlzn38"  #  @aryan_vbot
 APP_ID = int(os.environ.get("API_ID", "17983098"))
 API_HASH = os.environ.get("API_HASH", "ee28199396e0925f1f44d945ac174f64")
